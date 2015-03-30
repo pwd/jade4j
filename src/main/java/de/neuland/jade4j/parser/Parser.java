@@ -104,7 +104,15 @@ public class Parser {
             getContexts().push(extending);
             Node rootNode = extending.parse();
             getContexts().pop();
-            return rootNode;
+            Node mixRootNode = new BlockNode();
+            for (Node nd : block.getNodes()) {
+                if (nd instanceof MixinNode)
+                    mixRootNode.push(nd);
+            }
+            for (Node nd : rootNode.getNodes()) {
+                mixRootNode.push(nd);
+            }
+            return mixRootNode;
         }
 
         return block;

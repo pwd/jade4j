@@ -28,9 +28,9 @@
 
 
     <scm>
-        <url>https://github.com/neuland/jade4j</url>
-        <connection>scm:git:git://github.com/neuland/jade4j.git</connection>
-        <developerConnection>scm:git:git@github.com:neuland/jade4j.git</developerConnection>
+        <url>https://github.com/pwd/jade4j</url>
+        <connection>scm:git:git://github.com/pwd/jade4j.git</connection>
+        <developerConnection>scm:git:git@github.com:pwd/jade4j.git</developerConnection>
     </scm>
 
     <developers>
@@ -84,7 +84,7 @@
             </build>
         </profile>
     </profiles>
-    
+
     <build>
         <pluginManagement>
             <plugins>
